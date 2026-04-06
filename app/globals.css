@@ -5,6 +5,11 @@
   --foreground: #171717;
   --color-primary: #D12F2F; /* D12F2F -> primary */
   --color-secondary: #F3C477; /* F3C477 -> secondary */
+  --surface: #f9f8f6;
+  --lead: #2d3748;
+  --accent: #c22d2d;
+  --muted-1: #9ca3af;
+  --muted-2: #6b7280;
   color-scheme: light;
 }
 
@@ -44,3 +49,16 @@ html, body {
 .text-secondary { color: var(--color-secondary) !important; }
 .hover-primary:hover { color: var(--color-primary) !important; }
 .hover-bg-primary:hover { background-color: var(--color-primary) !important; }
+
+/* Convenience utilities for component-level color variables */
+.bg-background { background-color: var(--background) !important; }
+.bg-surface { background-color: var(--surface) !important; }
+.text-lead { color: var(--lead) !important; }
+.text-accent { color: var(--accent) !important; }
+.bg-accent { background-color: var(--accent) !important; }
+.bg-secondary { background-color: var(--color-secondary) !important; }
+.bg-foreground { background-color: var(--foreground) !important; }
+.text-foreground { color: var(--foreground) !important; }
+.text-muted { color: var(--muted-1) !important; }
+.text-muted-2 { color: var(--muted-2) !important; }
+.border-muted-2 { border-color: var(--muted-2) !important; }
