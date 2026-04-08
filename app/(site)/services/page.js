@@ -1,3 +1,4 @@
+import MotionWrapper from '@/app/components/common/MotionWrapper';
 import AgencyFulfillment from '@/app/components/service/AgencyFulfillment';
 import CoreServices from '@/app/components/service/CoreServices';
 import ExecutionCTA from '@/app/components/service/ExecutionCTA';
@@ -9,13 +10,27 @@ import { ArrowRight } from 'lucide-react';
 export default function service() {
   return (
     <section >
-      <ServiceHero></ServiceHero>
-      <FractionalTeam></FractionalTeam>
-      <AgencyFulfillment></AgencyFulfillment>
-      <CoreServices></CoreServices>
-      <ServiceCapabilities></ServiceCapabilities>
-      <ProcessStandards></ProcessStandards>
-      <ExecutionCTA></ExecutionCTA>
+      <MotionWrapper>
+        <ServiceHero />
+      </MotionWrapper>
+      <MotionWrapper>
+        <FractionalTeam />
+      </MotionWrapper>
+      <MotionWrapper>
+        <AgencyFulfillment />
+      </MotionWrapper>
+      <MotionWrapper>
+        <CoreServices />
+      </MotionWrapper>
+      <MotionWrapper>
+        <ServiceCapabilities />
+      </MotionWrapper>
+      <MotionWrapper>
+        <ProcessStandards />
+      </MotionWrapper>
+      <MotionWrapper>
+        <ExecutionCTA />
+      </MotionWrapper>
     </section>
   );
 }

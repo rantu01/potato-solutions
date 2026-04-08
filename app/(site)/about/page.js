@@ -1,9 +1,17 @@
+import AboutHero from "@/app/components/about/AboutHero";
+import WhyPotato from "@/app/components/about/WhyPotato";
+import MotionWrapper from "@/app/components/common/MotionWrapper";
 import Image from "next/image";
 
 export default function about() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center ">
-      <p>hello</p>
+    <div >
+      <MotionWrapper>
+        <AboutHero />
+      </MotionWrapper>
+      <MotionWrapper>
+        <WhyPotato />
+      </MotionWrapper>
     </div>
   );
 }
